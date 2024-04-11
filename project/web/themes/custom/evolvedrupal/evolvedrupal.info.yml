@@ -1,0 +1,38 @@
+name: evolvedrupal
+type: theme
+'base theme': olivero
+starterkit: true
+version: VERSION
+libraries:
+  - evolvedrupal/base
+  - evolvedrupal/messages
+  - core/normalize
+  - evolvedrupal/font
+  - evolvedrupal/tailwindcss
+libraries-extend:
+  user/drupal.user:
+    - evolvedrupal/user
+  core/drupal.dropbutton:
+    - evolvedrupal/dropbutton
+  core/drupal.dialog:
+    - evolvedrupal/dialog
+  file/drupal.file:
+    - evolvedrupal/file
+  core/drupal.progress:
+    - evolvedrupal/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.2.5'
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  hero: Hero (full width)
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
+  sidebar: Sidebar
+  content_below: Content Below
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom

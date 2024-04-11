@@ -1,0 +1,38 @@
+name: Card
+props:
+  type: object
+  properties:
+    header:
+      type: string
+      title: Header
+      description: "Header of the card"
+      examples:
+        - An amazing title for the card
+    body:
+      type: string
+      title: Body
+      description: "Some description, it may include anything."
+      examples:
+        - Card body
+    footer:
+      type: string
+      title: Footer
+      description: "Card footer"
+      examples:
+        - Card footer
+    className:
+      type: string
+      title: className
+      description: "some extra classnames for the components"
+      examples:
+        - some-custom-class
+slots:
+  headerSlot:
+    title: Header slot
+    description: Header of the card.
+  bodySlot:
+    title: Body slot
+    description: Body of the card.
+  footerSlot:
+    title: Body slot
+    description: Body of the card.
